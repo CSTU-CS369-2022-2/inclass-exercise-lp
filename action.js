@@ -1,5 +1,5 @@
-const myslide = document.querySelectorAll('.myslide'),
-	  dot = document.querySelectorAll('.dot');
+const myslide = document.querySelectorAll('#hero .myslide'),
+	  dot = document.querySelectorAll('#hero .dot');
 let counter = 1;
 slidefun(counter);
 

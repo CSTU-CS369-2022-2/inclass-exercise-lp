@@ -1,12 +1,12 @@
 /* 1 */
-* {
+#hero * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inder';
 }
 
-header {
+#hero header {
     height: 60px;
     width: 100%;
     position: absolute;
@@ -14,7 +14,7 @@ header {
     z-index: 2;
 }
 
-#logo {
+#hero #logo {
     line-height: 60px;
     margin-left: 75px;
     display: inline-block;
@@ -26,7 +26,7 @@ header {
     color: #000;
 }
 
-.logopic{
+#hero .logopic{
     width: 2.1%;
     position: absolute;
     left: 27px;
@@ -36,7 +36,7 @@ header {
     transition: 0.1s;
 }
 
-.logoback {
+#hero .logoback {
     position: absolute;
     width: 45px;
     height: 45px;
@@ -47,7 +47,7 @@ header {
     margin: 5px;
 }
 
-.signup {
+#hero .signup {
     float: right;
     line-height: 60px;
     margin-top: 5px;
@@ -57,24 +57,24 @@ header {
     border: none;
 }
 
-.signup a {
+#hero .signup a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
-.signup a:hover {
+#hero .signup a:hover {
     color: #000;
     font-weight: bold;
 }
 
-.actsignup {
+#hero .actsignup {
     background: rgba(2, 178, 135, 0.73);
     border-radius: 20px;
     padding: 6px 15px;
 }
 
-.login {
+#hero .login {
     float: right;
     line-height: 60px;
     margin-top: 5px;
@@ -84,38 +84,38 @@ header {
     border:  none;
 }
 
-.login a {
+#hero .login a {
     color: #000  ;
     font-weight: bold;
     text-decoration: none;
 }
 
-.login a:hover {
+#hero .login a:hover {
     color: #008C6A;
     font-weight: bold;
 }
 
-.actlogin {
+#hero .actlogin {
     background: #fff;
     border-radius: 20px;
     padding: 6px 15px;
 }
 
-.slider {
+#hero .slider {
     position: relative;
     width: 100%;
     background: #fff;
    
 }
 
-.myslide {
+#hero .myslide {
     height: 637px;
     display: none;
     overflow: hidden;
 }
 
-.previous,
-.next {
+#hero .previous,
+#hero .next {
     position: absolute;
     top: 582px;
     left: 47%;
@@ -127,13 +127,13 @@ header {
     user-select: none;
 }
 
-.next {
+#hero .next {
     transform: scaleX(-1);
     top: 86%;
     left: 28%;
 }
 
-.box {
+#hero .box {
     position: absolute;
     top: 92%;
     left: 45.5%;
@@ -146,14 +146,14 @@ header {
     border-radius: 13.5px;
 }
 
-.dotsbox {
+#hero .dotsbox {
     position: absolute;
     left: 50%;
     top: 90%;
     cursor: pointer;
 }
 
-.dot {
+#hero .dot {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -164,12 +164,12 @@ header {
 }
 
 
-.active,
-.dot:hover {
+#hero .active,
+#hero .dot:hover {
     background: #008C6A;
 }
 
-.fade {
+#hero .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -217,7 +217,7 @@ header {
 }
 
 
-.slidepic {
+#hero .slidepic {
     transform: scale(1.5, 1.5);
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
@@ -247,7 +247,7 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-    .myslide {
+    #hero .myslide {
         height: 500px;
     }
 
@@ -275,16 +275,16 @@ header {
 }
 
 @media screen and (max-width: 520px) {
-    .sign {
+    #hero .sign {
         margin-right: 20px;
     }
 
-    .sign a {
+    #hero .sign a {
         font-size: 12px;
     }
 }
 
-.getstr {
+#hero .getstr {
     position: relative;
     line-height: 0px;
     bottom: 257px;
@@ -293,25 +293,25 @@ header {
     font-size: 20px;
 }
 
-.getstr a {
+#hero .getstr a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
-.getstr a:hover {
+#hero .getstr a:hover {
     color: #000;
     font-weight: bold;
 }
 
-.actgetstr {
+#hero .actgetstr {
     background: #008C6A;
     border-radius: 20px;
     padding: 20px 50px;
     border-radius: 43px;
 }
 
-.input-group {
+#hero .input-group {
     position: relative;
     width: 665px;
     height: 95px;
@@ -321,7 +321,7 @@ header {
     border-radius: 43px;
 }
 
-.input-group .input-area {
+#hero .input-group .input-area {
     position: relative;
     border: 2px solid #ffffff;
     width: 500px;
@@ -335,17 +335,17 @@ header {
     outline: none;
 }
 
-.input-group .input-area:valid+.label {
+#hero .input-group .input-area:valid+.label {
     top: 10px;
     padding: 0 20px;
     font-size: 300px;
 }
 
-.input-group .input-area:focus {
+#hero .input-group .input-area:focus {
     border: 0px none;
 }
 
-.input-group .label {
+#hero .input-group .label {
     color: rgba(0, 0, 0, 0.3);
     position: absolute;
     font-size: 30px;
@@ -353,7 +353,7 @@ header {
     left: 50px;
 }
 
-.input-group .input-area:focus+.label {
+#hero .input-group .input-area:focus+.label {
     top: 10px;
     padding: 0 2px;
     font-size: 20px;

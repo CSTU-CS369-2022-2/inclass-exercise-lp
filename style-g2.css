@@ -1,5 +1,5 @@
 
-body {
+#navbar {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     background: #e5c8a8;
@@ -7,7 +7,7 @@ body {
     padding: 0; /*ขยายขอบ*/
 }
 
-nav{
+#navbar nav{
     display: flex;
     flex-direction: column;
     height: auto ;
@@ -27,14 +27,14 @@ nav{
 
 
 
-ul {
+#navbar ul {
     flex-direction: column;
     justify-content: center;
     padding-left: 0;
     display: none;
     width: 100%;
 }
-ul li{
+#navbar ul li{
     list-style-type: none;
     font-size: 15 px;
     cursor: pointer;
@@ -46,38 +46,38 @@ ul li{
     
 }
 
-ul li a {
+#navbar ul li a {
     text-decoration: none;
     color:#333;
 }
 
-ul li:first-child{
+#navbar ul li:first-child{
     margin-top: 0;
 }
-ul li:hover{
+#navbar ul li:hover{
     opacity:0.5 ;
 }
-.active{
+#navbar .active{
     display: flex;
 }
 
 @media screen and (min-width: 800px) {
-    nav{
+    #navbar nav{
         height: 70px;
         flex-direction: row;
     }
-    .logo{
+    #navbar .logo{
         padding-left: 50px ;
         margin: 0;
         width: 20%;
     }
-    ul{
+    #navbar ul{
         display: flex;
         justify-content:  flex-end;
         width:  80%;
         flex-direction: row;
     }
-    ul li{
+    #navbar ul li{
         display: inline-block;
         margin: 0 70px 0 0 ;
         text-align:  left;
@@ -85,7 +85,7 @@ ul li:hover{
         padding: 0;
 
     }
-    .nav-toggle{
+    #navbar .nav-toggle{
         display: none;
     }
     
